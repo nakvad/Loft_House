@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700&family=Roboto:wght@300&display=swap');
+
+body{
+    font-family: $font-main;
+    color: $white;
+    font-size: 16px;
+    background-color: $dark;
+}
+
+a{
+    color: $white;
+    transition: color 0.2 s ease-in;
+
+    &:hover{
+        color: $accent;
+    }
+}
+
+.container{
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1140px;
+    width: 100vw;
+}
+
+.text-right{
+    text-align: right;
+}
+
+
+/*You can use this code if you want use hidden h2*/
+.visually-hidden{
+    // Contain text within 1px box
+    height: 1px;
+    overflow: hidden;
+    width: 1px;
+
+    // Keep the layout
+    position: absolute;
+
+    // Remove any visible trace (e.g. background color)
+    clip: rect(1px 1px 1px 1px); /*IE6,IE7*/
+    clip: rect(1px 1px 1px 1px);
+    clip-path: inset(50%); /*browsers in the future*/
+
+    /*Prevent the screen reader to skip spaces between words*/
+    white-space: nowrap;
+}
+
+.container--sm{
+    max-width: 834px;
+}
+
+.none{
+    display: none !important;
+}
+
+.title-2{
+    font-size: 36px;
+    font-family: $font-accent;
+    color: $accent;
+    font-weight: 700;
+
+    @include mediaTablet{
+        font-size: 28px;
+    }
+}
+
+.link-bold{
+    color: $accent;
+    font-weight: 700;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    overflow-y: auto;
+  }
+
+body {
+    margin: 0;
+    padding-right: 0 !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+.no-scroll{
+    overflow-y: hidden;
+}

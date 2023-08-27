@@ -1,0 +1,44 @@
+.cta {
+    padding: 180px 0;
+
+    background: linear-gradient(180deg, #242B33 10.42%, rgba(36, 43, 51, 0.00) 50.52%, #242B33 90.10%), 
+    linear-gradient(0deg, rgba(36, 43, 51, 0.90) 0%, rgba(36, 43, 51, 0.90) 100%), url(./../../img/cta/cta-bg.jpg), #C4C4C4;
+
+    @include mediaTablet{
+        padding: 60px 0;
+    }
+}
+
+.cta__form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px 30px;
+}
+
+.cta__title {
+    margin-bottom: 17px;
+}
+
+.cta__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+
+    @include mediaTablet{
+        font-size: 4px;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+.cta__text {
+    color: $white;
+    font-family: $font-main;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+
+    @include mediaTablet{
+        font-size: 14px;
+    }
+}
