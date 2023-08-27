@@ -13,6 +13,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 35px 30px;
+
+    @include mediaTablet{
+        grid-template-columns: 1fr;
+    }
 }
 
 .cta__title {
@@ -25,7 +29,6 @@
     gap: 30px;
 
     @include mediaTablet{
-        font-size: 4px;
         grid-template-columns: 1fr;
         gap: 20px;
     }

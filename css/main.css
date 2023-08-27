@@ -542,6 +542,11 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 35px 30px;
 }
+@media screen and (max-width: 999px) {
+  .cta__form {
+    grid-template-columns: 1fr;
+  }
+}
 
 .cta__title {
   margin-bottom: 17px;
@@ -554,7 +559,6 @@ body {
 }
 @media screen and (max-width: 999px) {
   .cta__wrapper {
-    font-size: 4px;
     grid-template-columns: 1fr;
     gap: 20px;
   }
